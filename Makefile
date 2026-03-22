@@ -57,6 +57,51 @@ install.71:
 	symfony composer update
 	symfony composer config minimum-stability --unset
 
+## Install - Install Symfony 7.1 deps
+install.71: setup
+install.71: export SYMFONY_REQUIRE = 7.1.*@dev
+install.71:
+	rm -f composer.lock
+	symfony composer config minimum-stability dev
+	symfony composer update
+	symfony composer config minimum-stability --unset
+
+## Install - Install Symfony 7.2 deps
+install.72: setup
+install.72: export SYMFONY_REQUIRE = 7.2.*@dev
+install.72:
+	rm -f composer.lock
+	symfony composer config minimum-stability dev
+	symfony composer update
+	symfony composer config minimum-stability --unset
+
+## Install - Install Symfony 7.3 deps
+install.73: setup
+install.73: export SYMFONY_REQUIRE = 7.3.*@dev
+install.73:
+	rm -f composer.lock
+	symfony composer config minimum-stability dev
+	symfony composer update
+	symfony composer config minimum-stability --unset
+
+## Install - Install Symfony 7.4 deps
+install.74: setup
+install.74: export SYMFONY_REQUIRE = 7.4.*@dev
+install.74:
+	rm -f composer.lock
+	symfony composer config minimum-stability dev
+	symfony composer update
+	symfony composer config minimum-stability --unset
+
+## Install - Install Symfony 8.0 deps
+install.80: setup
+install.80: export SYMFONY_REQUIRE = 8.0.*@dev
+install.80:
+	rm -f composer.lock
+	symfony composer config minimum-stability dev
+	symfony composer update
+	symfony composer config minimum-stability --unset
+
 ########
 # Lint #
 ########
